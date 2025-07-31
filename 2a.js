@@ -1,14 +1,14 @@
 const prompt = require("prompt-sync")();
 
-let nota1 = Number(prompt("Digite a nota1 do aluno: "));
-let nota2 = Number(prompt("Digite a nota2 do aluno: "));
-let nota3 = Number(prompt("Digite a nota3 do aluno: "));
+let nota1 = Number(prompt("digite a nota1 do aluno: "));
+let nota2 = Number(prompt("digite a nota2 do aluno: "));
+let nota3 = Number(prompt("digite a nota3 do aluno: "));
 
-let mediaAluno = (nota1 + nota2 + nota3) / 3;
-let mediaEscola = 7;
+let mediaaluno = (nota1 + nota2 + nota3) / 3;
+let mediaescola = 7;
 
-if(mediaAluno >= mediaEscola){
-    console.log(`Aprovado! (${media}>=${mediaEscola}`)
+if(mediaaluno >= mediaescola){
+    console.log(`aprovado! (${mediaaluno}>=${mediaescola})`);
 }else{
-    console.log(`Reprovado (${mediaAluno}<${mediaEscola})`)
+    console.log(`reprovado (${mediaaluno}<${mediaescola})`);
 }
