@@ -6,4 +6,4 @@ for(let i = 11; i <= 30; i += 2){
     soma += i;
 }
 
-console.log(`Soma de todos os números ímpares maiores que 10 e menores que 30: `, soma);
+console.log(`soma de todos os numeros impares maiores que 10 e menores que 30: `, soma);
