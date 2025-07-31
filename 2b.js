@@ -1,9 +1,9 @@
 const prompt = require("prompt-sync")();
 
-let numero = Number(prompt("Digite um número: "));
+let numero = Number(prompt("digite um numero: "));
 
 if(numero % 2 == 0){
-    console.log(`O número ${numero} é par!`)
+    console.log(`o numero ${numero} e par!`);
 }else{
-    console.log(`O número ${numero} é ímpar!)`)
+    console.log(`o numero ${numero} e impar!`);
 }
