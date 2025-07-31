@@ -1,9 +1,9 @@
 const prompt = require("prompt-sync")();
 
-let numero = Number(prompt("Digite um número: "));
+let numero = Number(prompt("digite um numero: "));
 
 if(numero % 3 == 0){
-    console.log(`O número ${numero} é múltiplo de 3`);
+    console.log(`o numero ${numero} e multiplo de 3`);
 }else{
-    console.log(`O número ${numero} não é múltiplo de 3`);
+    console.log(`o numero ${numero} nao e multiplo de 3`);
 }
