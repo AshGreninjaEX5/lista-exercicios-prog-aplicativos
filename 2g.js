@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-class Usuario {
+class usuario {
     constructor(nome, idade, email){
         this.nome = nome;
         this.idade = idade;
@@ -8,13 +8,13 @@ class Usuario {
     }
 }
 
-function validarCadastro(nome, idade, email){
+function validarcadastro(nome, idade, email){
 
     if(!nome){
         return false;
     }
 
-    if(isNaN(idade) || idade < 18){
+    if(isnan(idade) || idade < 18){
         return false;
     }
 
@@ -25,16 +25,16 @@ function validarCadastro(nome, idade, email){
     return true;
 }
 
-let nome = prompt("Digite o seu nome completo: ");
-let idade = Number(prompt("Digite quantos anos você tem: "));
-let email = prompt("Digite o seu email: ");
+let nome = prompt("digite o seu nome completo: ");
+let idade = Number(prompt("digite quantos anos voce tem: "));
+let email = prompt("digite o seu email: ");
 
-let cadastroValido = validarCadastro(nome, idade, email);
+let cadastrovalido = validarcadastro(nome, idade, email);
 
-if(cadastroValido){
-    const Usuario1 = new Usuario(nome, idade, email);
-    console.log("Cadastro realizado com sucesso!");
-    console.log(`Informações registradas:`,Usuario1);
+if(cadastrovalido){
+    const usuario1 = new usuario(nome, idade, email);
+    console.log("cadastro realizado com sucesso!");
+    console.log(`informacoes registradas:`, usuario1);
 }else{
-    console.log("Preencha os dados corretamente!");
+    console.log("preencha os dados corretamente!");
 }
